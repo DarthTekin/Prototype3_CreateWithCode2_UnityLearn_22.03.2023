@@ -260,6 +260,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!198 &279610082 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9125212449759046732, guid: cb7cd9b0c56a24d49a40784bd3203ae6, type: 3}
+  m_PrefabInstance: {fileID: 7629558982650049376}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &520301289
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -334,6 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c582f7b0cff9040a4076f1ba2777db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionParticle: {fileID: 279610082}
   jumpForce: 700
   gravityModifier: 1.5
   isOnGround: 1
