@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
-{
-    private Rigidbody playerRb;
-    private Animator playerAnim;
+{   
+    public float jumpForce = 10;
+    public float gravityModifier;
+    public bool isOnGround = true;
+    public bool gameOver;
+
     public ParticleSystem explosionParticle;
     public ParticleSystem dirtParticle;
     public AudioClip jumpSound;
     public AudioClip crashSound;
+
+    private Rigidbody playerRb;
+    private Animator playerAnim;
     private AudioSource playerAudio;
-    public float jumpForce = 10;
-    public float gravityModifier;
-    public bool isOnGround = true;
-    public bool gameOver; 
 
     // Start is called before the first frame update
     void Start()
