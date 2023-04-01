@@ -9,7 +9,7 @@ public class SpawnManager : MonoBehaviour
 
     private Vector3 spawnPos = new Vector3(25, 0, 0);
 
-    public GameObject obstaclePrefab;
+    public GameObject[] obstaclePrefabs;
 
     private PlayerController playerControllerScript;
 
@@ -30,7 +30,8 @@ public class SpawnManager : MonoBehaviour
     {
         if (playerControllerScript.gameOver == false)
         {
-            Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
+            int i = Random.Range(0, obstaclePrefabs.Length);
+            Instantiate(obstaclePrefabs[i], spawnPos, obstaclePrefabs[i].transform.rotation);
         }
     }
 }
