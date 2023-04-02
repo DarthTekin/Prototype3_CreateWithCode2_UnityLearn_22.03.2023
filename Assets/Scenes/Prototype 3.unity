@@ -358,9 +358,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 700
+  doubleJumpForce: 5
   gravityModifier: 1.5
   isOnGround: 1
   gameOver: 0
+  doubleJumpUsed: 0
   explosionParticle: {fileID: 279610082}
   dirtParticle: {fileID: 239451201}
   jumpSound: {fileID: 8300000, guid: 113ee460fadc340e4957a7404a9fbb27, type: 3}
@@ -974,63 +976,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &5194382295446350665
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4407606543705443099, guid: fac4ee4090a2348468269d5bccc21c8c, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407606543705443099, guid: fac4ee4090a2348468269d5bccc21c8c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407606543705443099, guid: fac4ee4090a2348468269d5bccc21c8c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407606543705443099, guid: fac4ee4090a2348468269d5bccc21c8c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407606543705443099, guid: fac4ee4090a2348468269d5bccc21c8c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407606543705443099, guid: fac4ee4090a2348468269d5bccc21c8c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407606543705443099, guid: fac4ee4090a2348468269d5bccc21c8c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407606543705443099, guid: fac4ee4090a2348468269d5bccc21c8c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407606543705443099, guid: fac4ee4090a2348468269d5bccc21c8c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407606543705443099, guid: fac4ee4090a2348468269d5bccc21c8c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4407606543705443099, guid: fac4ee4090a2348468269d5bccc21c8c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7750282329755378244, guid: fac4ee4090a2348468269d5bccc21c8c, type: 3}
-      propertyPath: m_Name
-      value: ObstacleDoubleSpool
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fac4ee4090a2348468269d5bccc21c8c, type: 3}
 --- !u!1001 &7629558982650049376
 PrefabInstance:
   m_ObjectHideFlags: 0

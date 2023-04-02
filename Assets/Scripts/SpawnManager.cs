@@ -6,6 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
     private float startDelay = 2;
     private float repeatRate = 2;
+    private int index;
 
     private Vector3 spawnPos = new Vector3(25, 0, 0);
 
@@ -30,8 +31,8 @@ public class SpawnManager : MonoBehaviour
     {
         if (playerControllerScript.gameOver == false)
         {
-            int i = Random.Range(0, obstaclePrefabs.Length);
-            Instantiate(obstaclePrefabs[i], spawnPos, obstaclePrefabs[i].transform.rotation);
+            index = Random.Range(0, obstaclePrefabs.Length);
+            Instantiate(obstaclePrefabs[index], spawnPos, obstaclePrefabs[index].transform.rotation);
         }
     }
 }
