@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public bool isOnGround = true;
     public bool gameOver;
     public bool doubleJumpUsed;
+    public bool doubleSpeed = false;
 
     public ParticleSystem explosionParticle;
     public ParticleSystem dirtParticle;
@@ -33,6 +34,18 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         PlayerMove();
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            doubleSpeed = true;
+            playerAnim.SetFloat("Speed_Multiplier", 2.0f);
+        }
+
+        else if (doubleSpeed)
+        {
+            doubleSpeed = false;
+            playerAnim.SetFloat("Speed_Multiplier", 1.0f);
+        }
     }
 
     private void PlayerMove()
